@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #060a14;
+  --bg-elevated: #0c1322;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-hover: rgba(255, 255, 255, 0.07);
+  --border: rgba(255, 255, 255, 0.09);
+  --text-primary: #eef1f8;
+  --text-secondary: #9aa4bd;
+  --text-muted: #6b7591;
+
+  --accent-blue: #4682b4;
+  --accent-blue-light: #7fb3e0;
+  --accent-purple: #8b6fef;
+  --accent-pink: #ec6fa8;
+
+  --gradient-primary: linear-gradient(120deg, var(--accent-blue), var(--accent-purple));
+  --gradient-accent: linear-gradient(120deg, var(--accent-blue-light), var(--accent-purple), var(--accent-pink));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-work-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-manrope), Arial, Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: var(--accent-purple);
+  color: white;
+}
+
+/* subtle grid backdrop used behind hero-style sections */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.text-gradient {
+  background: var(--gradient-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+}
+
+.card:hover {
+  background: var(--surface-hover);
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
