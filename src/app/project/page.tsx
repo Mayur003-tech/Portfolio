@@ -36,13 +36,13 @@ const projects = [
     repo: "https://github.com/Mayur003-tech/QEA_Automation",
   },
   {
-    title: "Myntra Clone",
+    title: "GymFlow — Gym Membership Automation System",
     icon: ListChecks,
-    date: "May 2024",
-    stack: ["HTML", "CSS", "JavaScript"],
-    desc: "Responsive front-end clone of the Myntra website, replicating the homepage, product listings and navigation — an earlier project showcasing frontend layout and design fundamentals.",
-    live: "https://mayur003-tech.github.io/Myntra-Clone/",
-    repo: "https://github.com/Mayur003-tech/Myntra-Clone",
+    date: "Nov 2026",
+    stack: ["n8n", "Docker", "JavaScript" , "Google Sheets API", "Telegram Bot API"],
+    desc: "GymFlow is a zero-budget, end-to-end gym membership management and administrative automation system built with self-hosted n8n, Google Sheets, and Telegram (architected with a decoupled notification layer ready for WhatsApp Business Cloud API)",
+    live: undefined,
+    repo: "https://github.com/Mayur003-tech/GymFlow",
   },
 ];
 
