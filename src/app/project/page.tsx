@@ -44,6 +44,16 @@ const projects = [
     live: undefined,
     repo: "https://github.com/Mayur003-tech/GymFlow",
   },
+  {
+    title: "RAG-Powered AIOps Log Anomaly Detector",
+    icon: ListChecks,
+    date: "Nov 2026",
+    stack: [" Python 3.10+", " Hugging Face 'all-MiniLM-L6-v2'", "ChromaDB " , "Google Gemini 2.5 Flash", " Streamlit"],
+    desc: "An end-to-end Retrieval-Augmented Generation (RAG) system that detects anomalies in server and application logs, retrieves matching engineering runbooks from a vector database, and generates grounded root-cause analyses and remediation steps",
+    live: undefined,
+    repo: "https://github.com/Mayur003-tech/Anomaly_Detector_RAG",
+  },
+
 ];
 
 export default function Project() {
