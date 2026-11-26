@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ExternalLink, Github, Stethoscope, HandMetal, ListChecks } from "lucide-react";
+import { ExternalLink, Github, Stethoscope, HandMetal, ListChecks, Headset, HeartPlus, Bot } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -18,8 +18,17 @@ const projects = [
     repo: "https://github.com/divulgeai054-dev/DivulgeAISoftwareApplication",
   },
   {
+    title: "SupportPulse MCP — Agentic Customer Support Copilot",
+    icon: Headset,
+    date: "Self-Initiated",
+    stack: ["Python", "FASTMCP HTTP", "LangChain + Groq", "ChromDB", "Gradio 5 "],
+    desc: "SupportPulse MCP is a protocol-decoupled, agentic customer support assistant built using the Model Context Protocol (MCP), ChromaDB Policy RAG, and LangChain + Groq, backed by 67,675 preprocessed order records from the Flipkart Customer Support dataset.",
+    live: undefined,
+    repo: "https://github.com/Mayur003-tech/Support-Pulse-MCP",
+  },
+  {
     title: "TORA — Touchless Operating Room Assistant",
-    icon: HandMetal,
+    icon: HeartPlus,
     date: "Self-Initiated",
     stack: ["Python", "OpenCV", "Scikit-learn", "Random Forest", "Computer Vision"],
     desc: "AI-powered gesture recognition system using a Random Forest classifier for real-time hand gesture recognition, mapping gestures to touchless medical interface control actions. Achieved 85–95% gesture recognition accuracy and won 1st place in the Project Exhibition-Cum-Competition.",
@@ -38,7 +47,7 @@ const projects = [
   {
     title: "GymFlow — Gym Membership Automation System",
     icon: ListChecks,
-    date: "Nov 2026",
+    date: "Oct 2026",
     stack: ["n8n", "Docker", "JavaScript" , "Google Sheets API", "Telegram Bot API"],
     desc: "GymFlow is a zero-budget, end-to-end gym membership management and administrative automation system built with self-hosted n8n, Google Sheets, and Telegram (architected with a decoupled notification layer ready for WhatsApp Business Cloud API)",
     live: undefined,
@@ -46,7 +55,7 @@ const projects = [
   },
   {
     title: "RAG-Powered AIOps Log Anomaly Detector",
-    icon: ListChecks,
+    icon: Bot,
     date: "Nov 2026",
     stack: [" Python 3.10+", " Hugging Face 'all-MiniLM-L6-v2'", "ChromaDB " , "Google Gemini 2.5 Flash", " Streamlit"],
     desc: "An end-to-end Retrieval-Augmented Generation (RAG) system that detects anomalies in server and application logs, retrieves matching engineering runbooks from a vector database, and generates grounded root-cause analyses and remediation steps",
